@@ -11,4 +11,5 @@ processes = st.number_input(
     step=1
 )
 
-st.write(f"Simulation will include {processes} processes.")
+word = "process" if processes == 1 else "processes"
+st.write(f"Simulation will include {processes} {word}.")
